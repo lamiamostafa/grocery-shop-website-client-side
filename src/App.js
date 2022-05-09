@@ -12,8 +12,8 @@ import Register from './Pages/Login/Register/Register';
 import Footer from './Pages/Shared/Footer/Footer';
 import Checkout from './Pages/Checkout/Checkout/Checkout';
 import Feedback from 'react-bootstrap/esm/Feedback';
-import WhyUs from './Pages/Home/WhyUs/WhyUs';
 import './App.css';
+import AllItems from './Pages/AllItems/AllItems';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="feedback" element={<Feedback></Feedback>}></Route>
-        <Route path="whyUS" element={<WhyUs></WhyUs>}></Route>
+        <Route path="allitems" element={<AllItems></AllItems>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/checkout" element={
           <RequireAuth>
