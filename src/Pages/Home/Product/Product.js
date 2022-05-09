@@ -1,24 +1,27 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Service.css';
+import './Product.css';
 
-const Service = ({ service }) => {
-    const { id, name, img, description, price } = service;
+const Product = ({ product }) => {
+    const { id, name, img, description, price, quantity, supplierName } = product;
     const navigate = useNavigate();
 
-    const navigateToServiceDetail = id => {
-        navigate(`/service/${id}`);
+    const navigateToProductDetail = id => {
+        navigate(`/product/${id}`);
     }
     return (
 
-        <div className='g-5 col-sm-12 col-md-6 col-lg-4'>
-            <div className="card" style={{ width: "18rem" }}>
-                <img src={img} className="card-img-top" alt="..." />
+        <div className='g-5 col-sm-12 col-md-6 col-lg-4 product'>
+            <div className="card " style={{ width: "18rem" }}>
+                <img src={img} className="card-img-top text-center" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
-                    <p className="card-text">${price}</p>
                     <p className="card-text"><small>{description}</small></p>
-                    <button onClick={() => navigateToServiceDetail(id)} className='btn btn-primary'>Book: {name}</button>
+                    <p className="card-text">Price:${price}</p>
+                    <p className="card-text">Quantity:{quantity}</p>
+                    <p className="card-text">DeliveredBy:{supplierName}</p>
+
+                    <button onClick={() => navigateToProductDetail(id)} className='btn btn-primary updateButton'>Update: {name}</button>
 
                 </div>
             </div>
@@ -26,4 +29,4 @@ const Service = ({ service }) => {
     );
 };
 
-export default Service;
+export default Product;

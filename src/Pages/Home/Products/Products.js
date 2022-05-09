@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Product from '../Product/Product';
 import './Products.css';
 
@@ -16,15 +17,16 @@ const Products = () => {
             <div className="row">
                 <div id="products" className='container'>
                     <div className="row">
-                        <h1 className='text-primary text-center mt-5 mb-4 heading'> Our <span>Products</span>Products</h1>
-                        <div className="products-container">
+                        <h1 className='text-primary text-center mt-5 mb-4 heading'> Our <span>Products</span></h1>
+                        <div className="products-container ">
                             {
-                                products.map.slice(0, 6)(product => <Product
+                                products.slice(0, 6).map(product => <Product
                                     key={product.id}
-                                    service={product}
+                                    product={product}
                                 >
                                 </Product>)
                             }
+                            <Link to="/">Show More</Link>
                         </div>
                     </div>
                 </div>

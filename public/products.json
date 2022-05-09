@@ -5,7 +5,7 @@
         "price": "500",
         "description": "Organic Banana.It is fresh and smooth",
         "quantity": "20",
-        "supplier-name": "Rahim",
+        "supplierName": "Rahim",
         "img": "https://i.ibb.co/72NrXfD/product-1.png"
     },
     {
@@ -14,7 +14,7 @@
         "price": "100",
         "description": "Fresh Tomatoes are healthy for health",
         "quantity": "30",
-        "supplier-name": "Fahim",
+        "supplierName": "Fahim",
         "img": "https://i.ibb.co/jyY49PD/product-2.png"
     },
     {
@@ -23,7 +23,7 @@
         "price": "200",
         "description": "Fresh Oranges are imported from pakistan",
         "quantity": "10",
-        "supplier-name": "Mahim",
+        "supplierName": "Mahim",
         "img": "https://i.ibb.co/VBD7CPJ/product-3.png"
     },
     {
@@ -32,7 +32,7 @@
         "price": "600",
         "description": "Fresh Milk is from Our firm",
         "quantity": "30",
-        "supplier-name": "Fasim",
+        "supplierName": "Fasim",
         "img": "https://i.ibb.co/KxRZ30X/product-4.png"
     },
     {
@@ -41,7 +41,7 @@
         "price": "100",
         "description": "Fresh Grapes are good for Health",
         "quantity": "30",
-        "supplier-name": "Labib",
+        "supplierName": "Labib",
         "img": "https://i.ibb.co/bJXq0gG/product-5.png"
     },
     {
@@ -50,7 +50,7 @@
         "price": "150",
         "description": "Fresh Nuts are imported from China",
         "quantity": "100",
-        "supplier-name": "Kabib",
+        "supplierName": "Kabib",
         "img": "https://i.ibb.co/kMQDCJJ/product-6.png"
     },
     {
@@ -59,7 +59,7 @@
         "price": "130",
         "description": "Fresh Apples are good for Health",
         "quantity": "5",
-        "supplier-name": "Alve",
+        "supplierName": "Alve",
         "img": "https://i.ibb.co/yycYnn0/product-7.png"
     },
     {
@@ -68,7 +68,7 @@
         "price": "500",
         "description": "Fresh Butters are imported from London",
         "quantity": "10",
-        "supplier-name": "Rafi",
+        "supplierName": "Rafi",
         "img": "https://i.ibb.co/mqjD2sG/product-8.png"
     },
     {
@@ -77,7 +77,7 @@
         "price": "40",
         "description": "Fresh Nuts are contained of vitamins",
         "quantity": "100",
-        "supplier-name": "shabib",
+        "supplierName": "shabib",
         "img": "https://i.ibb.co/Q6PTfKt/product-9.png"
     }
 ]
