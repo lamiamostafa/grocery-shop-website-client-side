@@ -3,44 +3,81 @@
         "id": 1,
         "name": "BANANA",
         "price": "500",
-        "description": "5 Years Experience in this field....",
+        "description": "Organic Banana.It is fresh and smooth",
         "quantity": "20",
         "supplier-name": "Rahim",
         "img": "https://i.ibb.co/72NrXfD/product-1.png"
     },
     {
         "id": 2,
-        "name": "HEART DISEASES",
-        "price": "1000",
-        "description": "4 Years Experience in this field.....",
-        "img": "https://i.ibb.co/F3GMnr2/istockphoto-866772230-170667a.jpg"
+        "name": "TOMATO",
+        "price": "100",
+        "description": "Fresh Tomatoes are healthy for health",
+        "quantity": "30",
+        "supplier-name": "Fahim",
+        "img": "https://i.ibb.co/jyY49PD/product-2.png"
     },
     {
         "id": 3,
-        "name": "KIDNEY",
-        "price": "1200",
-        "description": "7 Years Experience in this field......",
-        "img": "https://i.ibb.co/4N7mWVS/thermometer-headache-pain-pills-139398.jpg"
+        "name": "ORANGE",
+        "price": "200",
+        "description": "Fresh Oranges are imported from pakistan",
+        "quantity": "10",
+        "supplier-name": "Mahim",
+        "img": "https://i.ibb.co/VBD7CPJ/product-3.png"
     },
     {
         "id": 4,
-        "name": "LIVER",
-        "price": "1800",
-        "description": "6 Years Experience in this field......",
-        "img": "https://i.ibb.co/F3GMnr2/istockphoto-866772230-170667a.jpg"
+        "name": "MILK",
+        "price": "600",
+        "description": "Fresh Milk is from Our firm",
+        "quantity": "30",
+        "supplier-name": "Fasim",
+        "img": "https://i.ibb.co/KxRZ30X/product-4.png"
     },
     {
         "id": 5,
-        "name": "NEUROLOGY",
-        "price": "1000",
-        "description": "7 Years Experience in this field......",
-        "img": "https://i.ibb.co/SnQCrWP/istockphoto-1300036753-612x612.jpg"
+        "name": "GRAPES",
+        "price": "100",
+        "description": "Fresh Grapes are good for Health",
+        "quantity": "30",
+        "supplier-name": "Labib",
+        "img": "https://i.ibb.co/bJXq0gG/product-5.png"
     },
     {
         "id": 6,
-        "name": "DENTIST",
-        "price": "3000",
-        "description": "2 Years Experience in this field.....",
-        "img": "https://i.ibb.co/WtkztX8/istockphoto-1203552631-612x612.jpg"
+        "name": "NUTS",
+        "price": "150",
+        "description": "Fresh Nuts are imported from China",
+        "quantity": "100",
+        "supplier-name": "Kabib",
+        "img": "https://i.ibb.co/kMQDCJJ/product-6.png"
+    },
+    {
+        "id": 7,
+        "name": "APPLE",
+        "price": "130",
+        "description": "Fresh Apples are good for Health",
+        "quantity": "5",
+        "supplier-name": "Alve",
+        "img": "https://i.ibb.co/yycYnn0/product-7.png"
+    },
+    {
+        "id": 8,
+        "name": "BUTTER",
+        "price": "500",
+        "description": "Fresh Butters are imported from London",
+        "quantity": "10",
+        "supplier-name": "Rafi",
+        "img": "https://i.ibb.co/mqjD2sG/product-8.png"
+    },
+    {
+        "id": 9,
+        "name": "CARROT",
+        "price": "40",
+        "description": "Fresh Nuts are contained of vitamins",
+        "quantity": "100",
+        "supplier-name": "shabib",
+        "img": "https://i.ibb.co/Q6PTfKt/product-9.png"
     }
 ]
