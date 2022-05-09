@@ -1,8 +1,6 @@
 import React from 'react';
-// import { Carousel } from 'react-bootstrap';
 import './Banner.css';
-
-import banner1 from '../../../images/category/home-img.png';
+import banner from '../../../images/category/home-img.png';
 
 
 const Banner = () => {
@@ -11,13 +9,13 @@ const Banner = () => {
 
         <section class="banner-section">
             <div class="image">
-                <img className="img-fluid" src={banner1}></img>
+                <img className="img-fluid" src={banner}></img>
 
             </div>
             <div className="content">
                 <span>Fresh And Organic</span>
                 <h3>Your Daily Need Products</h3>
-                <button className="btn">GetStarted</button>
+                <button className="btn">Get Started</button>
             </div>
         </section>
     );
