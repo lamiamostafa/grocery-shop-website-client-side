@@ -1,10 +1,12 @@
 [
     {
         "id": 1,
-        "name": "MEDICINE",
-        "price": "700",
+        "name": "BANANA",
+        "price": "500",
         "description": "5 Years Experience in this field....",
-        "img": "https://i.ibb.co/Zdyjs16/mufid-majnun-o-I20eh-IGNd4-unsplash.jpg"
+        "quantity": "20",
+        "supplier-name": "Rahim",
+        "img": "https://i.ibb.co/72NrXfD/product-1.png"
     },
     {
         "id": 2,

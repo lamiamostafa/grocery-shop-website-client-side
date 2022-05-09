@@ -34,3 +34,17 @@
 .category .box-container .box .btn {
     font-size: 1rem;
 }
+
+
+@media only screen and (max-width:576px) {
+    .category .box-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .category .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
