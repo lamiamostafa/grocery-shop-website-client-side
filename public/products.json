@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "MEDICINE",
+        "price": "700",
+        "description": "5 Years Experience in this field....",
+        "img": "https://i.ibb.co/Zdyjs16/mufid-majnun-o-I20eh-IGNd4-unsplash.jpg"
+    },
+    {
+        "id": 2,
+        "name": "HEART DISEASES",
+        "price": "1000",
+        "description": "4 Years Experience in this field.....",
+        "img": "https://i.ibb.co/F3GMnr2/istockphoto-866772230-170667a.jpg"
+    },
+    {
+        "id": 3,
+        "name": "KIDNEY",
+        "price": "1200",
+        "description": "7 Years Experience in this field......",
+        "img": "https://i.ibb.co/4N7mWVS/thermometer-headache-pain-pills-139398.jpg"
+    },
+    {
+        "id": 4,
+        "name": "LIVER",
+        "price": "1800",
+        "description": "6 Years Experience in this field......",
+        "img": "https://i.ibb.co/F3GMnr2/istockphoto-866772230-170667a.jpg"
+    },
+    {
+        "id": 5,
+        "name": "NEUROLOGY",
+        "price": "1000",
+        "description": "7 Years Experience in this field......",
+        "img": "https://i.ibb.co/SnQCrWP/istockphoto-1300036753-612x612.jpg"
+    },
+    {
+        "id": 6,
+        "name": "DENTIST",
+        "price": "3000",
+        "description": "2 Years Experience in this field.....",
+        "img": "https://i.ibb.co/WtkztX8/istockphoto-1203552631-612x612.jpg"
+    }
+]

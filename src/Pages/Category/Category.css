@@ -1,0 +1,36 @@
+.heading {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.heading span {
+    color: green;
+    text-transform: uppercase;
+}
+
+.box-container {
+    width: 75%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.category .box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+
+}
+
+.category .box-container .box {
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.category .box-container .box .btn {
+    font-size: 1rem;
+}
