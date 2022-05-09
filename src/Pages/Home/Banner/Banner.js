@@ -15,7 +15,7 @@ const Banner = () => {
             <div className="content">
                 <span>Fresh And Organic</span>
                 <h3>Your Daily Need Products</h3>
-                <button className="btn">Get Started</button>
+                <button className="button">Get Started</button>
             </div>
         </section>
     );

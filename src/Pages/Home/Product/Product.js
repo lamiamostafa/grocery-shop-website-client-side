@@ -21,7 +21,7 @@ const Product = ({ product }) => {
                     <p className="card-text">Quantity:{quantity}</p>
                     <p className="card-text">DeliveredBy:{supplierName}</p>
 
-                    <button onClick={() => navigateToProductDetail(id)} className='btn btn-primary updateButton'>Update: {name}</button>
+                    <button onClick={() => navigateToProductDetail(id)} className='btn btn-primary updateButton button'>Update: {name}</button>
 
                 </div>
             </div>

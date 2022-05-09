@@ -14,26 +14,26 @@ const Category = () => {
                     <h3>Vegetables</h3>
                     <p>upto 50% off</p>
                     <img src={category1} alt="" />
-                    <a href="#" class="btn">shop now</a>
+                    <a href="#" className="button">shop now</a>
                 </div>
 
                 <div className="box">
                     <h3>juice</h3>
                     <p>upto 44% off</p>
                     <img src={category2} alt="" />
-                    <a href="#" class="btn">shop now</a>
+                    <a href="#" className="button">shop now</a>
                 </div>
                 <div className="box">
                     <h3>meat</h3>
                     <p>upto 44% off</p>
                     <img src={category3} alt="" />
-                    <a href="#" class="btn">shop now</a>
+                    <a href="#" className="button">shop now</a>
                 </div>
                 <div className="box">
                     <h3>fruite</h3>
                     <p>upto 12% off</p>
                     <img src={category4} alt="" />
-                    <a href="#" class="btn">shop now</a>
+                    <a href="#" className="button">shop now</a>
                 </div>
             </div>
 
