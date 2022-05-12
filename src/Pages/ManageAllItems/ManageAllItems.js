@@ -2,7 +2,8 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Product from '../Home/Product/Product';
 
-const Checkout = () => {
+
+const ManageAllItems = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
         fetch('products.json')
@@ -11,7 +12,7 @@ const Checkout = () => {
 
     }, [])
     return (
-        < div >
+        <div>
             <div id="products" className='container'>
                 <div className="row">
                     <h1 className='text-primary text-center mt-5 mb-4 heading'> Our <span>All Products</span></h1>
@@ -27,9 +28,8 @@ const Checkout = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
 
-export default Checkout;
+export default ManageAllItems;

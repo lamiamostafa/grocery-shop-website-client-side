@@ -2,8 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Product from '../Home/Product/Product';
 
-
-const AllItems = () => {
+const Inventory = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
         fetch('products.json')
@@ -12,7 +11,7 @@ const AllItems = () => {
 
     }, [])
     return (
-        <div>
+        < div >
             <div id="products" className='container'>
                 <div className="row">
                     <h1 className='text-primary text-center mt-5 mb-4 heading'> Our <span>All Products</span></h1>
@@ -28,8 +27,9 @@ const AllItems = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };
 
-export default AllItems;
+export default Inventory;

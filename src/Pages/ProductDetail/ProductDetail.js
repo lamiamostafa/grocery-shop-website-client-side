@@ -7,8 +7,8 @@ const ProductDetail = () => {
         <div>
 
             <div className='text-center'>
-                <Link to="/checkout">
-                    <button className='btn btn-primary my-5'>Proceed Checkout</button>
+                <Link to="/manageallitems">
+                    <button className='btn btn-success my-5'>Proceed to Inventory</button>
                 </Link>
             </div>
         </div>
