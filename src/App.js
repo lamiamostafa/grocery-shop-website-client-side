@@ -15,6 +15,7 @@ import './App.css';
 import ManageAllItems from './Pages/ManageAllItems/ManageAllItems';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import Inventory from './Pages/Inventory/Inventory';
+import AddProduct from './Pages/AddProduct/AddProduct';
 
 function App() {
   return (
@@ -37,6 +38,13 @@ function App() {
           <RequireAuth>
             <Inventory></Inventory>
           </RequireAuth>
+        }></Route>
+        <Route path="/addproduct" element={
+
+          <RequireAuth>
+            <AddProduct></AddProduct>
+          </RequireAuth>
+
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
 
