@@ -26,7 +26,7 @@ const Products = () => {
                                 >
                                 </Product>)
                             }
-                            <Link to="/allitems">Show More</Link>
+                            <Link to="/manageallitems">Show More</Link>
                         </div>
                     </div>
                 </div>
