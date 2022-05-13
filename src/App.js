@@ -12,10 +12,10 @@ import Register from './Pages/Login/Register/Register';
 import Footer from './Pages/Shared/Footer/Footer';
 import Feedback from 'react-bootstrap/esm/Feedback';
 import './App.css';
-import ManageAllItems from './Pages/ManageAllItems/ManageAllItems';
 import ProductDetail from './Pages/ProductDetail/ProductDetail';
 import Inventory from './Pages/Inventory/Inventory';
 import AddProduct from './Pages/AddProduct/AddProduct';
+import ManageProducts from './Pages/ManageProducts/ManageProducts';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="feedback" element={<Feedback></Feedback>}></Route>
-        <Route path="manageallitems" element={<ManageAllItems></ManageAllItems>}></Route>
+        <Route path="manageallitems" element={<ManageProducts></ManageProducts>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/inventory" element={
           <RequireAuth>

@@ -21,6 +21,7 @@ const Product = ({ product }) => {
                     <p className="card-text">Quantity:{quantity}</p>
                     <p className="card-text">DeliveredBy:{supplierName}</p>
 
+                    <button onClick={() => navigateToProductDetail(_id)} className='btn btn-primary updateButton button'>Add Items: {name}</button>
                     <button onClick={() => navigateToProductDetail(_id)} className='btn btn-primary updateButton button'>Update: {name}</button>
 
                 </div>
