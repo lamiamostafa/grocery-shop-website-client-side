@@ -1,9 +1,14 @@
 import React from 'react';
 import useProducts from '../../hooks/useProducts';
-import '../Home/Product/Product.css';
+import { useNavigate } from 'react-router-dom';
 
 const ManageProducts = () => {
+    const navigate = useNavigate();
     const [products, setProducts] = useProducts();
+
+    const navigateAddProducts = event => {
+        navigate('/addproduct');
+    }
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure?");
         if (proceed) {
@@ -23,7 +28,7 @@ const ManageProducts = () => {
     }
     return (
         <div className="row">
-            <h2 className='text-primary text-center mt-5 mb-4 heading'> Manage <span>Your Products</span></h2>
+            <h2 className=' text-center mt-5 mb-4 heading'> Manage <span>Your Products</span></h2>
             <div className="products-container ">
                 {
                     products.map(product => <div key={product._id} className='g-5 col-sm-12 col-md-6 col-lg-4 product'>
@@ -36,13 +41,16 @@ const ManageProducts = () => {
                                 <p className="card-text">Quantity:{product.quantity}</p>
                                 <p className="card-text">DeliveredBy:{product.supplierName}</p>
 
-                                <button onClick={() => handleDelete(product._id)} className='btn btn-primary updateButton button'>X: {product.name}</button>
+                                <button onClick={() => handleDelete(product._id)} className='btn btn-primary updateButton button'>Delete: {product.name}</button>
 
 
                             </div>
                         </div>
                     </div>)
                 }
+                <div className="mx-auto">
+                    <button onClick={navigateAddProducts} className='btn btn-primary updateButton button '>ADD ITEM </button>
+                </div>
 
             </div>
 

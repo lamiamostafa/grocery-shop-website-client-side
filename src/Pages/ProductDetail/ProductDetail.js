@@ -9,15 +9,34 @@ const ProductDetail = () => {
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data));
-    })
+    }, []);
     return (
-        <div>
-            <h2>You are about to book: {product.name}</h2>
-            <div className='text-center'>
-                <Link to="/manageallitems">
-                    <button className='btn btn-success my-5'>Proceed to Inventory</button>
-                </Link>
+        <div className=' mx-auto col-sm-12 col-md-6 col-lg-4 product'>
+            <div className="card text-center " style={{ width: "18rem" }}>
+                <img src={product.img} className="card-img-top text-center" alt="..." />
+                <div className="card-body">
+                    <p className="card-title">ID:{product._id}</p>
+                    <h5 className="card-title">{product.name}</h5>
+                    <p className="card-text"><small>{product.description}</small></p>
+                    <p className="card-text">Price:${product.price}</p>
+                    <p className="card-text">Quantity:{product.quantity}</p>
+                    <p className="card-text">DeliveredBy:{product.supplierName}</p>
+                    <button className='btn btn-success my-2 '>Delivered</button>
+                    <div className="d-flex">
+                        <input className="w-50" type="number" name="restock" id="" />
+                        <button className='btn btn-success mx-2'>Restock</button>
+                    </div>
+
+
+                </div>
             </div>
+
+
+            {/* <div className='text-center'>
+                <Link to="/manageallitems">
+                    
+                </Link>
+            </div> */}
         </div>
     );
 };
