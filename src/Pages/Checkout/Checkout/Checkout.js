@@ -17,34 +17,18 @@ const Checkout = () => {
         toast('Thanks your data is Recorded');
 
     }
-    const handlePlaceOrder = data => {
 
-        const url = `http://localhost:5000/order`;
-        fetch(url, {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        })
-            .then(res => res.json())
-            .then(result => {
-                console.log(result);
-            })
-
-    }
 
     return (
 
-
         < div className='container w-50 mx-auto'>
-            <h2 className='text-primary text-center mt-2'>Please Checkout your booking</h2>
-            <Form onSubmit={handlePlaceOrder}>
+            <h2 className='text-success text-center mt-2'>Please Checkout your booking</h2>
+            <Form >
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control type="text" value={user.displayName} placeholder="Your Name" required readOnly disabled />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control type="email" value={user.email} placeholder="Your email" required readOnly disabled />
+                    <Form.Control type="email" value={user.email} style={{ textTransform: "lowercase" }} placeholder="Your email" required readOnly disabled />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="text" name="address" placeholder="Your Address" required autoComplete="off" />
@@ -55,7 +39,7 @@ const Checkout = () => {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control type="text" name="phone" placeholder="phone No" required />
                 </Form.Group>
-                <Button onClick={handleCheckOut} variant="primary w-50 mx-auto d-block mb-2" type="submit">
+                <Button onClick={handleCheckOut} variant="success w-50 mx-auto d-block mb-2" type="submit">
                     CheckOut
                 </Button>
             </Form>
