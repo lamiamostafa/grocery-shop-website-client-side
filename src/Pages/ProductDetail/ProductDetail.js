@@ -83,11 +83,9 @@ const ProductDetail = () => {
             </div>
 
 
-            {/* <div className='text-center'>
-                <Link to="/manageallitems">
-                    
-                </Link>
-            </div> */}
+            <div className='text-center'>
+                <Link to="/manageallitems">Manage Inventories</Link>
+            </div>
         </div>
     );
 };
