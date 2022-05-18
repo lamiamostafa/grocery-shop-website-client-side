@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import auth from '../../firebase.init';
@@ -9,13 +9,20 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
-    const [addProduct, setAddProduct] = useState();
+    // const [addProduct, setAddProduct] = useState();
     const [user] = useAuthState(auth);
+    // const emailRef = useRef('');
     const onSubmit = data => {
-        const newEmail = user.email;
-        const newField = { ...addProduct, email: newEmail };
-        setAddProduct(newField);
+        // const newEmail = user.email;
+        // const newField = { ...addProduct, email: newEmail };
+        // setAddProduct(newField);
         console.log(data);
+
+        // const email = emailRef.current.value;
+        // axios.post('http://localhost:5000/addproduct')
+        //     .then(response => {
+        //         console.log(response);
+        //     });
         // const email = user.email
         // axios.post('http://localhost:5000/addproduct', data.email)
         //     .then(response => {
@@ -40,6 +47,7 @@ const AddProduct = () => {
 
         const url = `http://localhost:5000/addproduct`;
         fetch(url, {
+
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -57,7 +65,7 @@ const AddProduct = () => {
             <h1>Please Add a Product</h1>
             {/* <p style={{ textTransform: "lowercase" }}>User:{user.email}</p> */}
             <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
-                <input className="mb-2 " style={{ textTransform: "lowercase" }} placeholder='Adminemail' value={user.email} {...register("email", { required: true, maxLength: 20 })} />
+                <input className="mb-2 " style={{ textTransform: "lowercase" }} placeholder='Adminemail' {...register("email")} />
                 <input className="mb-2" placeholder='Product Name' {...register("name", { required: true, maxLength: 20 })} />
                 <input className="mb-2" placeholder='Description' {...register("description")} />
                 <input className="mb-2" placeholder='Price' type="number" {...register("price")} />

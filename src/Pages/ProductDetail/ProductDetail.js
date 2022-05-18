@@ -17,9 +17,9 @@ const ProductDetail = () => {
     //         .then(data => setItem(data));
     // }, []);
 
-    const delivered = itemId => {
+    const delivered = productId => {
 
-        const oldQuantity = (item.quantity);
+        const oldQuantity = parseInt(item.quantity);
         const newQuantity = oldQuantity - 1;
         // const newProduct = { ...product, quantity: newQuantity };
         // setProduct(newProduct);
@@ -30,7 +30,7 @@ const ProductDetail = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(newQuantity)
+            body: JSON.stringify({ newQuantity })
         })
             .then(res => res.json())
             .then(data => {
@@ -41,8 +41,8 @@ const ProductDetail = () => {
     }
     const handleStockQuantity = event => {
         event.preventDefault();
-        const oldQuantity = (item.quantity);
-        const quantity = (event.target.quntity.value);
+        const oldQuantity = parseInt(item.quantity);
+        const quantity = parseInt(event.target.quntity.value);
         const newQuantity = oldQuantity + quantity;
 
         const url = `http://localhost:5000/product/${productId}`;
@@ -51,7 +51,7 @@ const ProductDetail = () => {
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(newQuantity)
+            body: JSON.stringify({ newQuantity })
         })
             .then(res => res.json())
             .then(data => {
