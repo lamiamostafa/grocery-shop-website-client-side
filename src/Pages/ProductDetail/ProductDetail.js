@@ -6,6 +6,7 @@ import useProductDetail from '../../hooks/useProductDetail';
 const ProductDetail = () => {
     const { productId } = useParams();
     const [item, setItem] = useProductDetail(productId);
+    const [updateQuantity, setUpdateQuantity] = useState({});
     // const [item, setItem] = useState({});
 
     // const [product, setProduct] = useState({});
@@ -21,8 +22,6 @@ const ProductDetail = () => {
 
         const oldQuantity = parseInt(item.quantity);
         const newQuantity = oldQuantity - 1;
-        // const newProduct = { ...product, quantity: newQuantity };
-        // setProduct(newProduct);
 
         const url = `http://localhost:5000/product/${productId}`;
         fetch(url, {
@@ -35,15 +34,22 @@ const ProductDetail = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                setUpdateQuantity(data);
+
                 alert("Delivered item successfully");
 
             });
+
     }
+
     const handleStockQuantity = event => {
         event.preventDefault();
         const oldQuantity = parseInt(item.quantity);
-        const quantity = parseInt(event.target.quntity.value);
+        console.log(oldQuantity);
+        const quantity = parseInt(event.target.quantity.value);
+        console.log(quantity);
         const newQuantity = oldQuantity + quantity;
+
 
         const url = `http://localhost:5000/product/${productId}`;
         fetch(url, {
@@ -56,6 +62,7 @@ const ProductDetail = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                setUpdateQuantity(data);
                 alert("Restock item successfully");
 
             });
@@ -73,7 +80,7 @@ const ProductDetail = () => {
                     <p className="card-text">DeliveredBy:{item.supplierName}</p>
                     <button onClick={() => delivered(productId)} className='btn btn-success my-2 '>Delivered</button>
                     <form onSubmit={handleStockQuantity} className="d-flex">
-                        <input className="w-50" type="number" name="restock" id="" value="restockNumber" />
+                        <input className="w-50 text-successs" type="number" name="quantity" id="quantity" />
 
                         <button className='btn btn-success mx-2'>Restock</button>
                     </form>
