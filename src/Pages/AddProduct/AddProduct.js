@@ -1,20 +1,42 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import auth from '../../firebase.init';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
+    const [addProduct, setAddProduct] = useState();
     const [user] = useAuthState(auth);
     const onSubmit = data => {
+        const newEmail = user.email;
+        const newField = { ...addProduct, email: newEmail };
+        setAddProduct(newField);
         console.log(data);
-        data.email = user.email
-        // axios.post('http://localhost:5000/addproduct', order)
+        // const email = user.email
+        // axios.post('http://localhost:5000/addproduct', data.email)
         //     .then(response => {
         //         console.log(response);
         //     })
+        //     try {
+        //         axios.post("http://localhost:5000/addproduct", {
+        //             email: user.email,
+        //             productName: data.productName,
+        //             description: data.description,
+        //             image: data.image,
+        //             supplierName: data.supplierName,
+        //             quantity: data.quantity,
+        //             price: data.price
+        //         })
+        //             .then(res => { toast.success("Added success", { id: "success" }) })
+        //     } catch {
+        //         toast.error("Added failed", { id: "failed" })
+        //     }
+
+        // };
 
         const url = `http://localhost:5000/addproduct`;
         fetch(url, {

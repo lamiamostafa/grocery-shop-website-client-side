@@ -9,7 +9,7 @@ const Feedback = () => {
     }
     return (
         <div id="feedback" className='container w-50 mx-auto my-5' >
-            <h2 className='text-primary text-center mt-2'>We Welcome Your Questions</h2>
+            <h2 className='text-success text-center mt-2'>We Welcome Your Questions</h2>
             <Form >
                 <Form.Group className="mb-2 pt-2" controlId="formBasicEmail">
                     <Form.Control type="text" placeholder="Any Problem? Yes/No " />
@@ -17,7 +17,7 @@ const Feedback = () => {
                 <Form.Group className="mb-2" controlId="formBasicPassword">
                     <Form.Control type="text" placeholder="Enter Your Message" />
                 </Form.Group>
-                <Button onClick={handleFeedBack} variant="primary w-50 mx-auto d-block my-4" type="submit">
+                <Button onClick={handleFeedBack} variant="success w-50 mx-auto d-block my-4" type="submit">
                     Submit
                 </Button>
                 <ToastContainer></ToastContainer>
