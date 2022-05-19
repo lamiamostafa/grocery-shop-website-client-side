@@ -31,21 +31,22 @@ const Login = () => {
     }
 
     if (user) {
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
     }
 
     if (error) {
         errorElement = <p className='text-danger'>Error: {error?.message}</p>
     }
 
-    const handleSubmit =  async event => {
+    const handleSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
-       await signInWithEmailAndPassword(email, password);
-       const {data} = await axios.post('http://localhost:5000/login',{email});
-       console.log(data);
+        await signInWithEmailAndPassword(email, password);
+        const { data } = await axios.post('http://localhost:5000/login', { email });
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate(from, { replace: true });
     }
 
     const navigateRegister = event => {

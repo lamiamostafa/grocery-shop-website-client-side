@@ -44,7 +44,7 @@ const Header = () => {
                                         <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button>
                                         <Nav.Link as={Link} to="manageallitems">Manage all items</Nav.Link>
                                         <Nav.Link as={Link} to="addproduct">Add items</Nav.Link>
-                                        <Nav.Link as={Link} to="about">My items</Nav.Link>
+                                        <Nav.Link as={Link} to="myitems">My items</Nav.Link>
                                         <Nav.Link as={Link} to="checkout">CheckOut</Nav.Link>
                                     </div>
 

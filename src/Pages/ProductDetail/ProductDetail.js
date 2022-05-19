@@ -5,18 +5,12 @@ import useProductDetail from '../../hooks/useProductDetail';
 
 const ProductDetail = () => {
     const { productId } = useParams();
-    const [item, setItem] = useProductDetail(productId);
-    const [updateQuantity, setUpdateQuantity] = useState({});
+    const [item, reload, setIsReload] = useProductDetail(productId);
+    // const [updateQuantity, setUpdateQuantity] = useState(item.quantity);
     // const [item, setItem] = useState({});
 
     // const [product, setProduct] = useState({});
     // const { quantity } = product;
-    // useEffect(() => {
-    //     const url = `http://localhost:5000/product/${productId}`;
-    //     fetch(url)
-    //         .then(res => res.json())
-    //         .then(data => setItem(data));
-    // }, []);
 
     const delivered = productId => {
 
@@ -34,9 +28,7 @@ const ProductDetail = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                setUpdateQuantity(data);
-
-                alert("Delivered item successfully");
+                setIsReload(!reload);
 
             });
 
@@ -62,8 +54,7 @@ const ProductDetail = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                setUpdateQuantity(data);
-                alert("Restock item successfully");
+                setIsReload(!reload);
 
             });
     }
