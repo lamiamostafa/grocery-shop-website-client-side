@@ -2,22 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
-// import { signOut } from 'firebase/auth';
-// import axiosPrivate from '../../api/axiosPrivate';
-// import Product from '../Home/Product/Product';
-
-// import useProducts from '../../hooks/useProducts';
 
 const MyItems = () => {
     const [user] = useAuthState(auth);
     const [myItems, setMyItems] = useState([]);
-    // const [products, setProducts] = useProducts();
-    // const navigate = useNavigate();
     useEffect(() => {
         const email = user.email;
         const getItems = async () => {
-            const url = `http://localhost:5000/myitem?email=${email}`;
+            const url = `https://desolate-shelf-59513.herokuapp.com/myitem?email=${email}`;
 
             const { data } = await axios.get(url,
                 {
@@ -37,7 +29,7 @@ const MyItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure?");
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://desolate-shelf-59513.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: "DELETE"
             })

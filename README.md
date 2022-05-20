@@ -1,7 +1,8 @@
 
 
 # warehouse-management-website
-## [Grocery Shop WebSite Live Link](https://independent-service-prov-781cb.web.app/)
+This is an Grocery management website where user can get all the product items .User has to login first for getting the detail information.
+## [Grocery Shop WebSite Live Link](https://warehouse-management-web-a8f05.web.app/)
 
 ## Project Includes
 

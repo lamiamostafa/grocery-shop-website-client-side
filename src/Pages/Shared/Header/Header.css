@@ -2,3 +2,12 @@
     border-radius: 50%;
 
 }
+
+@media only screen and (max-width:576px) {
+    .nav-header {
+        margin-left: 4px;
+
+
+    }
+
+}

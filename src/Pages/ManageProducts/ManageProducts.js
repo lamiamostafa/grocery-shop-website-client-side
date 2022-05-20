@@ -13,7 +13,7 @@ const ManageProducts = () => {
     const handleDelete = id => {
         const proceed = window.confirm("Are you sure?");
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://desolate-shelf-59513.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: "DELETE"
             })

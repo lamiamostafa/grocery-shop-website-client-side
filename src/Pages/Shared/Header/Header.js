@@ -40,8 +40,8 @@ const Header = () => {
 
                             {
                                 user ?
-                                    <div className="d-flex">
-                                        <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button>
+                                    <div className="d-flex nav-header ">
+                                        <button className='btn btn-link text-white text-decoration-none ' onClick={handleSignOut}>sign out</button>
                                         <Nav.Link as={Link} to="manageallitems">Manage all items</Nav.Link>
                                         <Nav.Link as={Link} to="addproduct">Add items</Nav.Link>
                                         <Nav.Link as={Link} to="myitems">My items</Nav.Link>

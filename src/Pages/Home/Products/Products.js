@@ -10,7 +10,7 @@ const Products = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/product')
+        fetch('https://desolate-shelf-59513.herokuapp.com/product')
             .then(res => res.json())
             .then(data => {
                 setIsLoading(false);

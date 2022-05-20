@@ -1,5 +1,5 @@
-import axios from 'axios';
-import React, { useRef, useState } from 'react';
+
+import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from "react-hook-form";
 import auth from '../../firebase.init';
@@ -13,7 +13,7 @@ const AddProduct = () => {
     const onSubmit = data => {
         console.log(data);
 
-        const url = `http://localhost:5000/addproduct`;
+        const url = `https://desolate-shelf-59513.herokuapp.com/addproduct`;
         fetch(url, {
 
             method: 'POST',

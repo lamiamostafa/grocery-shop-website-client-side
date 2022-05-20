@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import useProductDetail from '../../hooks/useProductDetail';
 
@@ -16,7 +16,7 @@ const ProductDetail = () => {
             alert('StockOut');
         }
 
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://desolate-shelf-59513.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -43,7 +43,7 @@ const ProductDetail = () => {
 
 
 
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://desolate-shelf-59513.herokuapp.com/product/${productId}`;
         fetch(url, {
             method: 'PUT',
             headers: {
