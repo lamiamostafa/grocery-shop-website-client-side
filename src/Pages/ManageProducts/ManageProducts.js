@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const ManageProducts = () => {
     const navigate = useNavigate();
     const [products, setProducts] = useProducts();
+    console.log(products);
 
     const navigateAddProducts = event => {
         navigate('/addproduct');

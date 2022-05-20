@@ -6,16 +6,15 @@ import useProductDetail from '../../hooks/useProductDetail';
 const ProductDetail = () => {
     const { productId } = useParams();
     const [item, reload, setIsReload] = useProductDetail(productId);
-    // const [updateQuantity, setUpdateQuantity] = useState(item.quantity);
-    // const [item, setItem] = useState({});
-
-    // const [product, setProduct] = useState({});
-    // const { quantity } = product;
 
     const delivered = productId => {
 
         const oldQuantity = parseInt(item.quantity);
         const newQuantity = oldQuantity - 1;
+
+        if (newQuantity === 0) {
+            alert('StockOut');
+        }
 
         const url = `http://localhost:5000/product/${productId}`;
         fetch(url, {
@@ -41,6 +40,7 @@ const ProductDetail = () => {
         const quantity = parseInt(event.target.quantity.value);
         console.log(quantity);
         const newQuantity = oldQuantity + quantity;
+
 
 
         const url = `http://localhost:5000/product/${productId}`;
