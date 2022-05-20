@@ -31,8 +31,24 @@
     padding: 1rem;
 }
 
-.category .box-container .box .button {
-    font-size: 1rem;
+.category-button {
+    text-decoration: none;
+    display: inline-block;
+    background: green;
+    color: #fff;
+    padding: .8rem 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.category-button:hover {
+    background: white;
+    color: green;
+
 }
 
 

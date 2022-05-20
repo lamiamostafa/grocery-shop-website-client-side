@@ -81,7 +81,7 @@ const ProductDetail = () => {
             </div>
 
 
-            <div className='text-center'>
+            <div className='text-center my-3'>
                 <Link to="/manageallitems">Manage Inventories</Link>
             </div>
         </div>

@@ -11,7 +11,7 @@ const Offer = () => {
                 <div className="content">
                     <h3>special offer</h3>
                     <p>upto 45% off</p>
-                    <a href="#" className='button'>CheckOut</a>
+                    <a href="#" className='category-button'>CheckOut</a>
                 </div>
 
             </div>
@@ -20,7 +20,7 @@ const Offer = () => {
                 <div className="content">
                     <h3>limited offer</h3>
                     <p>upto 50% off</p>
-                    <a href="#" className='button'>CheckOut</a>
+                    <a href="#" className='category-button'>CheckOut</a>
                 </div>
 
             </div>
